@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DadosPaciente">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#092C5C"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:scrollbars="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/s22"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="50dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:text="DADOS DO PACIENTE"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="20dp"
+            android:background="#092C5C"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/asqwewee"
+                    android:layout_width="98dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="Nome:"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/nome_pac"
+                    android:layout_width="292dp"
+                    android:layout_height="35dp"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="#D32F2F"
+                    android:backgroundTint="#E8E1E1"
+                    android:ems="10"
+                    android:inputType="textPersonName" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/assws"
+                    android:layout_width="101dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="Endereço:"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/end_pac"
+                    android:layout_width="292dp"
+                    android:layout_height="35dp"
+                    android:layout_marginHorizontal="2dp"
+                    android:layout_marginBottom="40dp"
+                    android:background="#D32F2F"
+                    android:backgroundTint="#E8E1E1"
+                    android:ems="10"
+                    android:inputType="text" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="2dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/telefoneeee"
+                    android:layout_width="98dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="1"
+                    android:text="Telefone:"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/tel_pac"
+                    android:layout_width="294dp"
+                    android:layout_height="35dp"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_marginBottom="40dp"
+                    android:background="#D32F2F"
+                    android:backgroundTint="#E8E1E1"
+                    android:ems="10"
+                    android:inputType="phone" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/telefoneemergenciapa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="1"
+                    android:text="Tel. Emg:"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/teleme_pac"
+                    android:layout_width="295dp"
+                    android:layout_height="35dp"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_marginBottom="40dp"
+                    android:background="#D32F2F"
+                    android:backgroundTint="#E8E1E1"
+                    android:ems="10"
+                    android:inputType="phone" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/emaiil"
+                    android:layout_width="95dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="1"
+                    android:text="E-mail:"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/email_pac"
+                    android:layout_width="292dp"
+                    android:layout_height="35dp"
+                    android:layout_marginHorizontal="2dp"
+                    android:layout_marginBottom="40dp"
+                    android:layout_weight="1"
+                    android:background="#D32F2F"
+                    android:backgroundTint="#E8E1E1"
+                    android:ems="10"
+                    android:inputType="text" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/datanassc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="5dp"
+                android:layout_marginBottom="10dp"
+                android:text="Data Nasc:"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/datanasc_pac"
+                android:layout_width="117dp"
+                android:layout_height="35dp"
+                android:layout_marginHorizontal="5dp"
+                android:layout_marginBottom="40dp"
+                android:background="#D32F2F"
+                android:backgroundTint="#E8E1E1"
+                android:ems="10"
+                android:inputType="date" />
+
+            <TextView
+                android:id="@+id/ssss82"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="5dp"
+                android:layout_marginBottom="10dp"
+                android:inputType="text"
+                android:text="Tipo Sang:"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/tipo_sanguineo"
+                android:layout_width="117dp"
+                android:layout_height="35dp"
+                android:layout_marginHorizontal="5dp"
+                android:layout_marginBottom="40dp"
+                android:layout_weight="1"
+                android:background="#D32F2F"
+                android:backgroundTint="#E8E1E1"
+                android:ems="10"
+                android:inputType="date" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/ssss73"
+                    android:layout_width="174dp"
+                    android:layout_height="59dp"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="Informações Complementares:"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textIsSelectable="false"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <CheckBox
+                    android:id="@+id/checkBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Problemas  Respiratórios"
+                    android:textColor="#EFEBEB"
+                    android:textColorHint="#FFFFFF" />
+
+                <CheckBox
+                    android:id="@+id/checkBox2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Diabetes"
+                    android:textColor="#EFEBEB"
+                    android:textColorHint="#FFFFFF" />
+
+                <CheckBox
+                    android:id="@+id/checkBox3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Colesterol"
+                    android:textColor="#EFEBEB"
+                    android:textColorHint="#FFFFFF" />
+
+                <CheckBox
+                    android:id="@+id/checkBox4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Hipertensão"
+                    android:textColor="#EFEBEB"
+                    android:textColorHint="#FFFFFF" />
+
+                <CheckBox
+                    android:id="@+id/checkBox5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Alergia"
+                    android:textColor="#EFEBEB"
+                    android:textColorHint="#FFFFFF" />
+
+                <CheckBox
+                    android:id="@+id/checkBox6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Gestante"
+                    android:textColor="#EFEBEB"
+                    android:textColorHint="#FFFFFF" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:alwaysDrawnWithCache="false"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <ImageView
+                        android:id="@+id/imageView6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        tools:srcCompat="@tools:sample/avatars" />
+
+                    <TextView
+                        android:id="@+id/sss9s"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="5dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="10dp"
+                        android:text="TESTE COVID-19:"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/status_teste"
+                        android:layout_width="163dp"
+                        android:layout_height="30dp"
+                        android:layout_marginHorizontal="5dp"
+                        android:layout_marginBottom="40dp"
+                        android:layout_weight="1"
+                        android:background="#7A7979"
+                        android:backgroundTint="#E8E1E1"
+                        android:ems="10"
+                        android:inputType="date" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/alterar_cad_pac"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollHorizontally="false"
+            android:text="Alterar dados"
+            android:verticalScrollbarPosition="defaultPosition" />
+
+    </LinearLayout>
+    /&gt;
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
